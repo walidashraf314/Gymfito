@@ -1,0 +1,674 @@
+﻿<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Classes</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Teko:wght@300..700&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://ajax.cdnjs.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="https://ajax.cdnjs.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-minimal.min.css">
+	<link rel="stylesheet" href="https://ajax.cdnjs.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="~/css/site.css">
+</head>
+<body class="bg-[#01010F] text-[#E7E7E7] text-[18px] leading-[1.5] font-[Vazirmatn]">
+	@* NAVBAR *@
+	<div class="sticky z-50 top-0 bg-[#01010F]">
+		<div class="max-w-[1320px] mx-auto px-[15px]">
+			<div class="flex justify-between items-center h-[90px] font-[Teko]">
+				<div class="">
+					<a class="flex items-center gap-[5px]" href="/home/index">
+						<img class="" src="https://raw.githubusercontent.com/uiaextend/gymfito/main/home/logo.svg" alt="">
+						<div class="text-[28px] font-semibold">GYMFITO</div>
+					</a>
+				</div>
+				<div class="hidden xl:block">
+					<div class="flex text-[20px] font-medium">
+						<div class="group relative">
+							<div class="relative">
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 border-r-[1px] border-[#F67A45] border-opacity-40 group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+								<div class="relative h-[90px] flex items-center gap-[5px] px-[20px]">
+									<div class="relative">
+										<div class="absolute top-0 right-0 bottom-0 left-0 group-hover:text-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.06s] transition-all duration-[.3s]">HOME</div>
+										<div class="group-hover:scale-y-0 group-hover:delay-0 delay-[.06s] transition-all duration-[.3s]">HOME</div>
+									</div>
+									<div class="text-[12px]"><i class="fa fa-angle-down"></i></div>
+								</div>
+							</div>
+							<div class="absolute w-[230px] group-[:not(:hover)]:invisible">
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10"></div>
+								<div class="relative">
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+									<a class="" href="/Home/index">
+										<div class="group/c relative">
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+											<div class="relative py-[15px] px-[20px]">
+												<div class="relative">
+													<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:text-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Home Page One</div>
+													<div class="origin-top group-[:not(:hover)]:scale-y-0 group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Home Page One</div>
+												</div>
+											</div>
+										</div>
+									</a>
+
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+								</div>
+							</div>
+						</div>
+						<div class="group relative">
+							<div class="relative">
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 border-r-[1px] border-[#F67A45] border-opacity-40 group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+								<div class="relative h-[90px] flex items-center gap-[5px] px-[20px]">
+									<div class="relative">
+										<div class="absolute top-0 right-0 bottom-0 left-0 group-hover:text-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.06s] transition-all duration-[.3s]">CLASSES</div>
+										<div class="group-hover:scale-y-0 group-hover:delay-0 delay-[.06s] transition-all duration-[.3s]">CLASSES</div>
+									</div>
+									<div class="text-[12px]"><i class="fa fa-angle-down"></i></div>
+								</div>
+							</div>
+							<div class="absolute w-[230px] group-[:not(:hover)]:invisible">
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10"></div>
+								<div class="relative">
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+									<a class="" href="/classes/classes">
+										<div class="group/c relative">
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+											<div class="relative py-[15px] px-[20px]">
+												<div class="relative">
+													<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:text-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Class List</div>
+													<div class="origin-top group-[:not(:hover)]:scale-y-0 group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Class List</div>
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+									<a class="" href="/ClassDetails/ClassDetails">
+										<div class="group/c relative">
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+											<div class="relative py-[15px] px-[20px]">
+												<div class="relative">
+													<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:text-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Class Details</div>
+													<div class="origin-bottom group-[:not(:hover)]:scale-y-0 group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Class Details</div>
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+								</div>
+							</div>
+						</div>
+						<div class="group relative">
+							<div class="relative">
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 border-r-[1px] border-[#F67A45] border-opacity-40 group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+								<div class="relative h-[90px] flex items-center gap-[5px] px-[20px]">
+									<div class="relative">
+										<div class="absolute top-0 right-0 bottom-0 left-0 group-hover:text-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.06s] transition-all duration-[.3s]">SERVICES</div>
+										<div class="group-hover:scale-y-0 group-hover:delay-0 delay-[.06s] transition-all duration-[.3s]">SERVICES</div>
+									</div>
+									<div class="text-[12px]"><i class="fa fa-angle-down"></i></div>
+								</div>
+							</div>
+							<div class="absolute w-[230px] group-[:not(:hover)]:invisible">
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10"></div>
+								<div class="relative">
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+									<a class="" href="/services/services">
+										<div class="group/c relative">
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+											<div class="relative py-[15px] px-[20px]">
+												<div class="relative">
+													<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:text-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Our Services</div>
+													<div class="origin-top group-[:not(:hover)]:scale-y-0 group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Our Services</div>
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+									<a class="" href="/ServiceDetails/ServiceDetails">
+										<div class="group/c relative">
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+											<div class="relative py-[15px] px-[20px]">
+												<div class="relative">
+													<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:text-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Service Details</div>
+													<div class="origin-bottom group-[:not(:hover)]:scale-y-0 group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Service Details</div>
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+								</div>
+							</div>
+						</div>
+						<div class="group relative">
+							<div class="relative">
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 border-r-[1px] border-[#F67A45] border-opacity-40 group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+								<div class="relative h-[90px] flex items-center gap-[5px] px-[20px]">
+									<div class="relative">
+										<div class="absolute top-0 right-0 bottom-0 left-0 group-hover:text-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.06s] transition-all duration-[.3s]">BLOG</div>
+										<div class="group-hover:scale-y-0 group-hover:delay-0 delay-[.06s] transition-all duration-[.3s]">BLOG</div>
+									</div>
+									<div class="text-[12px]"><i class="fa fa-angle-down"></i></div>
+								</div>
+							</div>
+							<div class="absolute w-[230px] group-[:not(:hover)]:invisible">
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10"></div>
+								<div class="relative">
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+									<a class="" href="/blog/blog">
+										<div class="group/c relative">
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+											<div class="relative py-[15px] px-[20px]">
+												<div class="relative">
+													<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:text-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Blog List</div>
+													<div class="origin-top group-[:not(:hover)]:scale-y-0 group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Blog List</div>
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+									<a class="" href="/blogDetails/blogDetails">
+										<div class="group/c relative">
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+											<div class="relative py-[15px] px-[20px]">
+												<div class="relative">
+													<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:text-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Blog Details</div>
+													<div class="origin-bottom group-[:not(:hover)]:scale-y-0 group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Blog Details</div>
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+								</div>
+							</div>
+						</div>
+						<div class="group relative">
+							<div class="relative">
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 border-r-[1px] border-[#F67A45] border-opacity-40 group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+								<div class="relative h-[90px] flex items-center gap-[5px] px-[20px]">
+									<div class="relative">
+										<div class="absolute top-0 right-0 bottom-0 left-0 group-hover:text-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.06s] transition-all duration-[.3s]">PAGES</div>
+										<div class="group-hover:scale-y-0 group-hover:delay-0 delay-[.06s] transition-all duration-[.3s]">PAGES</div>
+									</div>
+									<div class="text-[12px]"><i class="fa fa-angle-down"></i></div>
+								</div>
+							</div>
+							<div class="absolute w-[230px] group-[:not(:hover)]:invisible">
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10"></div>
+								<div class="relative">
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+									<a class="" href="/AboutUs/AboutUs">
+										<div class="group/c relative">
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+											<div class="relative py-[15px] px-[20px]">
+												<div class="relative">
+													<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:text-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]">About Us</div>
+													<div class="origin-top group-[:not(:hover)]:scale-y-0 group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.06s] transition-all duration-[.3s]">About Us</div>
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+									<a class="" href="/BMI/BMI">
+										<div class="group/c relative">
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+											<div class="relative py-[15px] px-[20px]">
+												<div class="relative">
+													<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:text-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]">BMI Calculator</div>
+													<div class="origin-bottom group-[:not(:hover)]:scale-y-0 group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.06s] transition-all duration-[.3s]">BMI Calculator</div>
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+									<a class="" href="/schedule/schedule">
+										<div class="group/c relative">
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+											<div class="relative py-[15px] px-[20px]">
+												<div class="relative">
+													<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:text-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Schedule</div>
+													<div class="origin-top group-[:not(:hover)]:scale-y-0 group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Schedule</div>
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+									<a class="" href="/pricing/pricing">
+										<div class="group/c relative">
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+											<div class="relative py-[15px] px-[20px]">
+												<div class="relative">
+													<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:text-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Pricing Table</div>
+													<div class="origin-bottom group-[:not(:hover)]:scale-y-0 group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Pricing Table</div>
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+									<a class="" href="/gallery/gallery">
+										<div class="group/c relative">
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+											<div class="relative py-[15px] px-[20px]">
+												<div class="relative">
+													<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:text-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Gallery</div>
+													<div class="origin-top group-[:not(:hover)]:scale-y-0 group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Gallery</div>
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+									<a class="" href="/contactUs/contactUs">
+										<div class="group/c relative">
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+											<div class="relative py-[15px] px-[20px]">
+												<div class="relative">
+													<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:text-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Contact Us</div>
+													<div class="origin-bottom group-[:not(:hover)]:scale-y-0 group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Contact Us</div>
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+								</div>
+							</div>
+						</div>
+						<div class="group relative">
+							<div class="relative">
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 border-r-[1px] border-[#F67A45] border-opacity-40 group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+								<div class="relative h-[90px] flex items-center gap-[5px] px-[20px]">
+									<div class="relative">
+										<div class="absolute top-0 right-0 bottom-0 left-0 group-hover:text-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.06s] transition-all duration-[.3s]">TRAINER</div>
+										<div class="group-hover:scale-y-0 group-hover:delay-0 delay-[.06s] transition-all duration-[.3s]">TRAINER</div>
+									</div>
+									<div class="text-[12px]"><i class="fa fa-angle-down"></i></div>
+								</div>
+							</div>
+							<div class="absolute w-[230px] group-[:not(:hover)]:invisible">
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10"></div>
+								<div class="relative">
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+									<a class="" href="/trainer/trainer">
+										<div class="group/c relative">
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+											<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+											<div class="relative py-[15px] px-[20px]">
+												<div class="relative">
+													<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:text-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Trainer List</div>
+													<div class="origin-top group-[:not(:hover)]:scale-y-0 group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Trainer List</div>
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+									<a class="" href="/trainerDetails/trainerDetails">
+										<a class="" href="/trainerDetails/trainerDetails">
+											<div class="group/c relative">
+												<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.06s] delay-0 transition-all duration-[.3s]"></div>
+												<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.04s] delay-[.02s] transition-all duration-[.3s]"></div>
+												<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.02s] delay-[.04s] transition-all duration-[.3s]"></div>
+												<div class="origin-bottom absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]"></div>
+												<div class="relative py-[15px] px-[20px]">
+													<div class="relative">
+														<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:text-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Trainer Details</div>
+														<div class="origin-bottom group-[:not(:hover)]:scale-y-0 group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.06s] transition-all duration-[.3s]">Trainer Details</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<div class="border-t-[1px] border-[#F67A45] border-opacity-40"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="flex items-center">
+						<a class="xl:hidden group relative" data-c-toggle="a" href="#offcanvas">
+							<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-hover:scale-y-0 group-hover:delay-0 delay-[.4s] transition-all duration-[.3s]"></div>
+							<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.4s] delay-0 transition-all duration-[.3s]"></div>
+							<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.3s] delay-[.1s] transition-all duration-[.3s]"></div>
+							<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.2s] delay-[.2s] transition-all duration-[.3s]"></div>
+							<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 border-[1px] border-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.1s] delay-[.3s] transition-all duration-[.3s]"></div>
+							<div class="relative h-[54px] w-[54px] flex justify-center items-center">
+								<div class="relative">
+									<div class="absolute top-0 right-0 bottom-0 left-0 group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.3s] transition-all duration-[.3s]">
+										<i class="fa-solid fa-bars"></i>
+									</div>
+									<div class="group-hover:scale-y-0 group-hover:delay-0 delay-[.3s] transition-all duration-[.3s]">
+										<i class="fa-solid fa-bars"></i>
+									</div>
+								</div>
+							</div>
+						</a>
+						@if (!User.Identity.IsAuthenticated)
+						{
+							<div class="xl:hidden md:px-[20px] border-t-[1px] border-[#F67A45]"></div>
+							<a class="hidden md:block group relative" href="/Account/Register">
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-hover:scale-y-0 group-hover:delay-0 delay-[.4s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.4s] delay-0 transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.3s] delay-[.1s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.2s] delay-[.2s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 border-[1px] border-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.1s] delay-[.3s] transition-all duration-[.3s]"></div>
+								<div class="relative h-[54px] w-[144px] flex justify-center items-center">
+									<div class="relative">
+										<div class="absolute top-0 right-0 bottom-0 left-0 group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.3s] transition-all duration-[.3s]">JOIN NOW</div>
+										<div class="group-hover:scale-y-0 group-hover:delay-0 delay-[.3s] transition-all duration-[.3s]">JOIN NOW</div>
+									</div>
+								</div>
+							</a>
+							<div class="hidden md:block px-[20px] border-t-[1px] border-[#F67A45]"></div>
+							<div class="xl:hidden md:px-[20px] border-t-[1px] border-[#F67A45]"></div>
+							<a class="hidden md:block group relative" href="/Account/Login">
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-hover:scale-y-0 group-hover:delay-0 delay-[.4s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.4s] delay-0 transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.3s] delay-[.1s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.2s] delay-[.2s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 border-[1px] border-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.1s] delay-[.3s] transition-all duration-[.3s]"></div>
+								<div class="relative h-[54px] w-[144px] flex justify-center items-center">
+									<div class="relative">
+										<div class="absolute top-0 right-0 bottom-0 left-0 group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.3s] transition-all duration-[.3s]">Login</div>
+										<div class="group-hover:scale-y-0 group-hover:delay-0 delay-[.3s] transition-all duration-[.3s]">Login</div>
+									</div>
+								</div>
+							</a>
+						}
+						else
+						{
+							<div class="xl:hidden md:px-[20px] border-t-[1px] border-[#F67A45]"></div>
+							<a class="hidden md:block group relative" href="/Account/Logout">
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-hover:scale-y-0 group-hover:delay-0 delay-[.4s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.4s] delay-0 transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.3s] delay-[.1s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.2s] delay-[.2s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 border-[1px] border-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.1s] delay-[.3s] transition-all duration-[.3s]"></div>
+								<div class="relative h-[54px] w-[144px] flex justify-center items-center">
+									<div class="relative">
+										<div class="absolute top-0 right-0 bottom-0 left-0 group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.3s] transition-all duration-[.3s]">Logout</div>
+										<div class="group-hover:scale-y-0 group-hover:delay-0 delay-[.3s] transition-all duration-[.3s]">Logout</div>
+									</div>
+								</div>
+							</a>
+							<div class="xl:hidden md:px-[20px] border-t-[1px] border-[#F67A45]"></div>
+							<div class="flex items-center">
+								<span class="text-[#D5BDA2] mr-[20px]">Welcome @User.Identity.Name</span>
+								<a class="hidden md:block group relative" href="#">
+									<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-hover:scale-y-0 group-hover:delay-0 delay-[.4s] transition-all duration-[.3s]"></div>
+									<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.4s] delay-0 transition-all duration-[.3s]"></div>
+									<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.3s] delay-[.1s] transition-all duration-[.3s]"></div>
+									<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.2s] delay-[.2s] transition-all duration-[.3s]"></div>
+									<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 border-[1px] border-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.1s] delay-[.3s] transition-all duration-[.3s]"></div>
+									<div class="relative h-[54px] w-[144px] flex justify-center items-center">
+									</div>
+								</a>
+							</div>
+						}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	@RenderBody()
+
+
+
+	<!-- section footer -->
+	<div class="pt-[150px]">
+		<div class="max-w-[1320px] mx-auto px-[15px]">
+			<div class="border-t-[1px] border-[#F67A45] border-opacity-50"></div>
+			<div class="flex justify-between">
+				<div class="py-[50px]">
+					<div class="flex items-center gap-[5px]">
+						<div class="font-[Teko] font-semibold text-[24px]">LOCATION &amp; CONTACT</div>
+						<div class="flex-1 border-t-[10px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[7px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[4px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[3px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[1px] border-[#D5BDA2] border-opacity-50"></div>
+					</div>
+					<div class="pt-[30px]"></div>
+					<div class="flex gap-[10px]">
+						<div class="w-[102px] text-[#F67A45] text-[20px] font-medium">Address:</div>
+						<div class="">
+							<div class="">901 N Pitt Str., Suite 170</div>
+							<div class="">Alexandria, NY, USA</div>
+						</div>
+					</div>
+					<div class="pt-[30px]"></div>
+					<div class="flex gap-[10px]">
+						<div class="w-[102px] text-[#F67A45] text-[20px] font-medium">Email:</div>
+						<div class="">
+							<div class="">example@email.com</div>
+						</div>
+					</div>
+					<div class="pt-[30px]"></div>
+					<div class="flex gap-[10px]">
+						<div class="w-[102px] text-[#F67A45] text-[20px] font-medium">Open Hour:</div>
+						<div class="">
+							<div class="">Sun - Thu: Open 24/7</div>
+						</div>
+					</div>
+				</div>
+				<div class="hidden xl:block border-l-[1px] border-[#F67A45] border-opacity-50"></div>
+				<div class="hidden xl:block py-[50px]">
+					<div class="flex items-center gap-[5px]">
+						<div class="font-[Teko] font-semibold text-[24px]">LINK</div>
+						<div class="flex-1 border-t-[10px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[7px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[4px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[3px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[1px] border-[#D5BDA2] border-opacity-50"></div>
+					</div>
+					<div class="pt-[30px]"></div>
+					<div class="flex flex-col gap-[22px]">
+						<div class="flex items-center gap-[10px]">
+							<div class="text-[#F67A45]"><i class="fa fa-plus"></i></div>
+							<a class="hover:text-[#F67A45]" href="#">About Us</a>
+						</div>
+						<div class="flex items-center gap-[10px]">
+							<div class="text-[#F67A45]"><i class="fa fa-plus"></i></div>
+							<a class="hover:text-[#F67A45]" href="#">Our Services</a>
+						</div>
+						<div class="flex items-center gap-[10px]">
+							<div class="text-[#F67A45]"><i class="fa fa-plus"></i></div>
+							<a class="hover:text-[#F67A45]" href="#">Pricing Table</a>
+						</div>
+						<div class="flex items-center gap-[10px]">
+							<div class="text-[#F67A45]"><i class="fa fa-plus"></i></div>
+							<a class="hover:text-[#F67A45]" href="#">Contact Us</a>
+						</div>
+						<div class="flex items-center gap-[10px]">
+							<div class="text-[#F67A45]"><i class="fa fa-plus"></i></div>
+							<a class="hover:text-[#F67A45]" href="/">HOME</a>
+						</div>
+					</div>
+				</div>
+				<div class="hidden xl:block border-l-[1px] border-[#F67A45] border-opacity-50"></div>
+				<div class="hidden xl:block py-[50px]">
+					<div class="flex items-center gap-[5px]">
+						<div class="font-[Teko] font-semibold text-[24px]">SOCIAL</div>
+						<div class="flex-1 border-t-[10px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[7px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[4px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[3px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[1px] border-[#D5BDA2] border-opacity-50"></div>
+					</div>
+					<div class="pt-[30px]"></div>
+					<div class="flex flex-col gap-[22px]">
+						<div class="flex items-center gap-[10px]">
+							<div class="text-[#F67A45]"><i class="fa fa-plus"></i></div>
+							<a class="hover:text-[#F67A45]" href="#">facebook.com</a>
+						</div>
+						<div class="flex items-center gap-[10px]">
+							<div class="text-[#F67A45]"><i class="fa fa-plus"></i></div>
+							<a class="hover:text-[#F67A45]" href="#">twitter.com</a>
+						</div>
+						<div class="flex items-center gap-[10px]">
+							<div class="text-[#F67A45]"><i class="fa fa-plus"></i></div>
+							<a class="hover:text-[#F67A45]" href="#">linkedin.com</a>
+						</div>
+						<div class="flex items-center gap-[10px]">
+							<div class="text-[#F67A45]"><i class="fa fa-plus"></i></div>
+							<a class="hover:text-[#F67A45]" href="#">youtube.com</a>
+						</div>
+					</div>
+				</div>
+				<div class="hidden md:block border-l-[1px] border-[#F67A45] border-opacity-50"></div>
+				<div class="hidden md:block py-[50px]">
+					<a class="flex items-center gap-[5px]" href="index.html">
+						<img class="" src="https://raw.githubusercontent.com/uiaextend/gymfito/main/home/logo.svg" alt="">
+						<div class="flex-1 border-t-[10px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[7px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[4px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[3px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="flex-1 border-t-[1px] border-[#D5BDA2] border-opacity-50"></div>
+						<div class="font-[Teko] text-[28px] font-semibold">GYMFITO</div>
+					</a>
+					<div class="pt-[30px]"></div>
+					<div class="">
+						<div class="">Lorem Ipsum is simply dummy text of the</div>
+						<div class="">print and typesetting industry. The indus</div>
+						<div class="">stan. Lem Ipsum is dummy.</div>
+					</div>
+					<div class="pt-[30px]"></div>
+					<div class="flex items-center gap-[10px]">
+						<div class="bg-[#F67A45] w-[40px] h-[40px] flex items-center justify-center rounded-full">
+							<img class="" src="https://raw.githubusercontent.com/uiaextend/gymfito/main/home/phone.svg" alt="">
+						</div>
+						<div class="flex-1 flex items-center gap-[5px]">
+							<div class="flex-1 border-t-[10px] border-[#D5BDA2] border-opacity-50"></div>
+							<div class="flex-1 border-t-[7px] border-[#D5BDA2] border-opacity-50"></div>
+							<div class="flex-1 border-t-[4px] border-[#D5BDA2] border-opacity-50"></div>
+							<div class="flex-1 border-t-[3px] border-[#D5BDA2] border-opacity-50"></div>
+							<div class="flex-1 border-t-[1px] border-[#D5BDA2] border-opacity-50"></div>
+						</div>
+						<div class="font-[Teko] text-[28px] font-semibold">
+							<div data-scroll="[data-scroll-item]" class="">
+								<div data-scroll-cog="" class="hidden">
+									{
+									"scrollTrigger": {
+									"trigger": "[data-scroll-item]"
+
+									}
+									}
+								</div>
+								<div data-scroll-item="odometer" class="group">
+									<div class="flex">
+										<div class="">(</div>
+										<div class="odometer" data-v="406"></div>
+										<div class="">)&nbsp;</div>
+										<div class="odometer" data-v="555"></div>
+										<div class="">-0</div>
+										<div class="odometer" data-v="220"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="border-t-[1px] border-[#F67A45] border-opacity-50"></div>
+			<div class="py-[50px] flex justify-between items-center">
+				<div class="">
+					<a class="flex items-center gap-[10px] hover:text-[#F67A45]" href="#">
+						<img class="rotate-90" src="https://raw.githubusercontent.com/uiaextend/gymfito/main/home/hero-prev.svg" alt="">
+						<div class="">TOP</div>
+					</a>
+				</div>
+				<div class="hidden md:block">&copy;2024 All Rights Reserved saihoai </div>
+				<a class="flex items-center gap-[10px] hover:text-[#F67A45]" href="#">
+					<div class="">Languages</div>
+					<div class="">
+						<img class="" src="https://raw.githubusercontent.com/uiaextend/gymfito/main/home/hero-arrow.svg" alt="">
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- section -->
+
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.cdnjs.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://ajax.cdnjs.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+	<script src="https://ajax.cdnjs.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+	<script src="https://ajax.cdnjs.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+	<script src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	<script src="~/js/all.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

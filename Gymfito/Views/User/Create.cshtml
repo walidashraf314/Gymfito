@@ -1,0 +1,207 @@
+﻿@model Gymfito.ViewModels.UserVM
+
+@* @{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>UserVM</h4>
+<hr />
+<div  class="row">
+    <div class="col-md-4">
+		<form asp-action="Create" class="max-w-[1320px] m-auto">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FullName" class="control-label"></label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+ *@
+<form asp-action="Create" style="width: 70%; margin: 50px auto">
+	<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+	<div class="border-[10px] border-[#F67A45] bg-[#D5BDA2] text-[#01010F] p-[30px]">
+		<div class="text-center pb-[30px]">
+			<div class="font-[Teko] font-semibold text-[36px]">BOOK A CLASS</div>
+		</div>
+		<div class="grid grid-cols-1 gap-[30px]">
+			<div class="">
+				<div class="flex items-center gap-[10px]">
+					<label asp-for="FullName" class="control-label"></label>
+					<div class="flex-1">
+						<div class="group/c relative">
+							<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:scale-y-0 group-hover:delay-0 delay-[.4s] transition-all duration-[.3s]"></div>
+							<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.4s] delay-0 transition-all duration-[.3s]"></div>
+							<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.3s] delay-[.1s] transition-all duration-[.3s]"></div>
+							<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.2s] delay-[.2s] transition-all duration-[.3s]"></div>
+							<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.1s] delay-[.3s] transition-all duration-[.3s]"></div>
+							<div class="relative">
+								<div class="absolute top-0 right-0 bottom-0 left-0 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.4s] transition-all duration-[.3s]">
+									<input asp-for="FullName" class="form-control" />
+									<span asp-validation-for="FullName" class="text-danger"></span>
+								</div>
+								<div class="group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.4s] transition-all duration-[.3s]">
+									<div class="relative h-[27px] flex items-center">
+										<div class="flex-1 border-t-[2px] border-dotted border-[#01010F]"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="">
+						<i class="fa fa-user"></i>
+					</div>
+				</div>
+
+				<div class="">
+					<div class="flex items-center gap-[10px]">
+						<label asp-for="Email" class="control-label"></label>
+						<div class="flex-1">
+							<div class="group/c relative">
+								<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:scale-y-0 group-hover:delay-0 delay-[.4s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.4s] delay-0 transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.3s] delay-[.1s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.2s] delay-[.2s] transition-all duration-[.3s]"></div>
+								<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.1s] delay-[.3s] transition-all duration-[.3s]"></div>
+								<div class="relative">
+									<div class="absolute top-0 right-0 bottom-0 left-0 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.4s] transition-all duration-[.3s]">
+										<input asp-for="Email" class="form-control" />
+										<span asp-validation-for="Email" class="text-danger"></span>
+									</div>
+									<div class="group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.4s] transition-all duration-[.3s]">
+										<div class="relative h-[27px] flex items-center">
+											<div class="flex-1 border-t-[2px] border-dotted border-[#01010F]"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="">
+							<i class="fa fa-envelope"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="">
+			<div class="flex items-center gap-[10px]">
+				<label asp-for="Phone" class="control-label"></label>
+				<div class="flex-1">
+					<div class="group/c relative">
+						<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:scale-y-0 group-hover:delay-0 delay-[.4s] transition-all duration-[.3s]"></div>
+						<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.4s] delay-0 transition-all duration-[.3s]"></div>
+						<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.3s] delay-[.1s] transition-all duration-[.3s]"></div>
+						<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.2s] delay-[.2s] transition-all duration-[.3s]"></div>
+						<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.1s] delay-[.3s] transition-all duration-[.3s]"></div>
+						<div class="relative">
+							<div class="absolute top-0 right-0 bottom-0 left-0 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.4s] transition-all duration-[.3s]">
+								<input asp-for="Phone" class="form-control" />
+								<span asp-validation-for="Phone" class="text-danger"></span>
+							</div>
+							<div class="group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.4s] transition-all duration-[.3s]">
+								<div class="relative h-[27px] flex items-center">
+									<div class="flex-1 border-t-[2px] border-dotted border-[#01010F]"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<i class="fa fa-phone"></i>
+				</div>
+			</div>
+		</div>
+		<div class="">
+			<div class="flex items-center gap-[10px]">
+				<label asp-for="ClassId" class="control-label"></label>
+				<div class="flex-1">
+					<div class="group/c relative">
+						<div class="absolute top-0 right-0 bottom-0 left-0 group-hover/c:scale-y-0 group-hover:delay-0 delay-[.4s] transition-all duration-[.3s]"></div>
+						<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.4s] delay-0 transition-all duration-[.3s]"></div>
+						<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.3s] delay-[.1s] transition-all duration-[.3s]"></div>
+						<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.2s] delay-[.2s] transition-all duration-[.3s]"></div>
+						<div class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-[.1s] delay-[.3s] transition-all duration-[.3s]"></div>
+						<div class="relative">
+							<div class="absolute top-0 right-0 bottom-0 left-0 group-[:not(:hover)]/c:scale-y-0 group-[:not(:hover)]/c:delay-0 delay-[.4s] transition-all duration-[.3s]">
+								<input asp-for="ClassId" class="form-control" />
+								<span asp-validation-for="ClassId" class="text-danger"></span>
+							</div>
+							<div class="group-hover/c:scale-y-0 group-hover/c:delay-0 delay-[.4s] transition-all duration-[.3s]">
+								<div class="relative h-[27px] flex items-center">
+									<div class="flex-1 border-t-[2px] border-dotted border-[#01010F]"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<i class="fa fa-folder"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex flex-col items-center">
+			<div class="p-[50px] border-l-[1px] border-r-[1px] border-[#F67A45]"></div>
+			<button class="group relative">
+				<span class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] bg-opacity-10 border-[1px] border-[#F67A45] group-hover:scale-y-0 group-hover:delay-0 delay-[.4s] transition-all duration-[.3s]"></span>
+				<span class="absolute top-0 right-0 bottom-0 left-0 bg-[#D5BDA2] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.4s] delay-0 transition-all duration-[.3s]"></span>
+				<span class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.3s] delay-[.1s] transition-all duration-[.3s]"></span>
+				<span class="absolute top-0 right-0 bottom-0 left-0 bg-[#01010F] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.2s] delay-[.2s] transition-all duration-[.3s]"></span>
+				<span class="absolute top-0 right-0 bottom-0 left-0 bg-[#F67A45] group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-[.1s] delay-[.3s] transition-all duration-[.3s]"></span>
+				<span class="relative h-[54px] w-[160px] flex justify-center items-center">
+					<span class="relative font-[Teko] font-semibold">
+						<span class="absolute top-0 right-0 bottom-0 left-0 group-[:not(:hover)]:scale-y-0 group-[:not(:hover)]:delay-0 delay-[.4s] transition-all duration-[.3s]">
+							<span class="flex items-center gap-[10px]">
+								<span class="">JOIN CLASS</span>
+								<span class="">
+									<img class="" src="https://raw.githubusercontent.com/uiaextend/gymfito/main/home/hero-arrow.svg" alt="">
+								</span>
+							</span>
+						</span>
+						<span class="block group-hover:scale-y-0 group-hover:delay-0 delay-[.4s] transition-all duration-[.3s]">
+							<span class="flex items-center gap-[10px]">
+								<input type="submit" value="JOIN CLASS" />
+
+								<span class="">
+									<img class="" src="https://raw.githubusercontent.com/uiaextend/gymfito/main/home/hero-arrow.svg" alt="">
+								</span>
+							</span>
+						</span>
+					</span>
+				</span>
+			</button>
+		</div>
+	</div>
+</form>
+@* <div class="form-group">
+	<input type="submit" value="Create" class="btn btn-primary" />
+</div> *@
+@* <div>
+	<a asp-action="Index">Back to List</a>
+</div> *@
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}

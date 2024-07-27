@@ -10,48 +10,54 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Register">
+        <form asp-action="Register" style="width: 400px; margin: 50px auto;">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+            <div class="form-group" style="display: flex; flex-direction: column; margin-bottom: 10px">
                 <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
+                <input asp-for="Name" class="form-control" style="border: 1px solid #eee; border-radius: 4px;padding: 5px 10px;color: #333; outline: none;" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Password" class="control-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
+            <div class="form-group" style="display: flex; flex-direction: column; margin-bottom: 10px">
                 <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
+                <input asp-for="Email" class="form-control" style="border: 1px solid #eee; border-radius: 4px;padding: 5px 10px;color: #333; outline: none;" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display: flex; flex-direction: column; margin-bottom: 10px">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" style="border: 1px solid #eee; border-radius: 4px;padding: 5px 10px;color: #333; outline: none;" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: column; margin-bottom: 10px">
                 <label asp-for="confirmPassword" class="control-label"></label>
-                <input asp-for="confirmPassword" class="form-control" />
+                <input asp-for="confirmPassword" class="form-control" style="border: 1px solid #eee; border-radius: 4px;padding: 5px 10px;color: #333; outline: none;" />
                 <span asp-validation-for="confirmPassword" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display: flex; flex-direction: column; margin-bottom: 10px">
                 <label asp-for="phoneNumber" class="control-label"></label>
-                <input asp-for="phoneNumber" class="form-control" />
+                <input asp-for="phoneNumber" class="form-control" style="border: 1px solid #eee; border-radius: 4px;padding: 5px 10px;color: #333; outline: none;" />
                 <span asp-validation-for="phoneNumber" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display: flex; flex-direction: column; margin-bottom: 10px">
                 <label asp-for="Adress" class="control-label"></label>
-                <input asp-for="Adress" class="form-control" />
+                <input asp-for="Adress" class="form-control" style="border: 1px solid #eee; border-radius: 4px;padding: 5px 10px;color: #333; outline: none;" />
                 <span asp-validation-for="Adress" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="form-group" style="    background: rgb(246 122 69 / var(--tw-bg-opacity));
+    padding: 8px 50px;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;">
+                <button type="submit">Create</button>
             </div>
         </form>
     </div>
 </div>
 
-<div>
+@* <div>
     <a asp-action="Index">Back to List</a>
-</div>
+</div> *@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
